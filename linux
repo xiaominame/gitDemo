@@ -1,0 +1,55 @@
+**** 命令行优于图形界面
+**** 键盘优于鼠标
+**** 搜索优于导航
+
+
+************基础命令行*************
+一.常用命令
+
+1.dpkg --list 查看已安装的软件
+2.sudo apt-get remove --purge 要卸载的软件的名字 #卸载软件的同时删除配置文件
+  sudo apt-get remove 要卸载软件的名字 #卸载该软件
+
+3.sudo apt-get clean 删除缓存
+4.dpkg -i xxx.deb 安装deb软件包
+5.dpkg -r xxx.deb 删除软件包
+6.dpkg -r --purge xxx.deb 连同配置问价一起删除
+7.banner 表示输出图形字符(toilet、figlet)
+8.adduser会创建用户，创建目录，创建密码(提示你设置)，作者一系列的操作，而useradd只会创建用户,创建完了用passwd　lilei去设置新用户的密码
+
+9.linux截屏快捷键　ctl+alt+a
+
+10.删除指定目录下所有的.DS_Store文件
+　sudo find /home/path -name ".DS_Store" -type f -delete
+
+二查看硬盘及内存空间
+1.查看内存及swap的大小
+free -m
+2.查看当前文件夹下所有文件大小(包括子文件夹)
+du -sh
+3.查看指定文件夹下所有的文件大小(包括子文件夹)
+du -h ftp
+4.查看指定文件夹大小
+du -hs ftp
+5.查看磁盘剩余空间
+df -hl
+6.查看每个根路径的区分大小
+df -h
+7.返回该目录的大小
+du -sh [目录名]
+8.返回该文件夹总Ｍ数
+du -sm [文件夹]
+
+
+***********基础命令行**************
+
+enjarify反编译apk
+cd pwd/enjarify
+./enjarify.sh youapp.apk ---> .jar
+
+jadx查看jar源码
+cd pwd/build/jadx
+bin/jadx-gui lib/youlib.jar
+
+查看资源文件
+sudo apktool d youapp.apk
