@@ -89,3 +89,14 @@ bin/jadx-gui lib/youlib.jar
 
 查看资源文件
 sudo apktool d youapp.apk
+
+1.ubuntu中的ip地址配置
+2.常用网络命令
+  a.hostname 查看或设置主机名
+  b.ifdown or ifup 禁用或启用设备网卡
+  c.netstat -tuln/-an 查询网络状态
+  d.route -n 查看路由网关
+  e.nslookup (server查看本机dns服务器) 进行域名解析与ip地址解析
+  f.telnet 远程管理与端口探测命令(ssh)目前此命令几乎不用,太不安全
+  g.traceroute ip或域名 /路由跟踪命令
+~                                      
